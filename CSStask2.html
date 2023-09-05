@@ -9,6 +9,7 @@
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
+        color: blue;
       }
 
       .container {
@@ -16,11 +17,15 @@
       }
 
       .vertical-navbar {
-        background-color: #333;
+        margin-top: 10%;
         width: 200px;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 30px;
       }
 
       .vertical-navbar ul {
+        background-color: #acd9e7ff;
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -34,20 +39,26 @@
         display: block;
         padding: 15px 20px;
         text-decoration: none;
-        color: #fff;
+
         transition: background-color 0.3s;
       }
 
       .vertical-navbar a:hover {
-        background-color: #555;
+        background-color: #fea500;
       }
 
       .horizontal-navbar {
-        background-color: #777;
         flex-grow: 1;
+        height: 40px;
+        top: 30%;
+        position: absolute;
+        left: 30%;
+        border: 2px solid black;
+        padding: 10px;
       }
 
       .horizontal-navbar ul {
+        background-color: #d3d2d2ff;
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -57,21 +68,36 @@
 
       .horizontal-navbar li {
         text-align: center;
-        margin: 0 20px;
+        width: 100px;
+        height: 40px;
       }
 
-      .horizontal-navbar a {
+      .horizontal-navbar li {
         text-decoration: none;
-        color: #fff;
+
         transition: background-color 0.3s;
       }
 
-      .horizontal-navbar a:hover {
-        background-color: #555;
+      .horizontal-navbar a {
+        top: 30%;
+        position: relative;
+      }
+
+      .horizontal-navbar li:hover {
+        background-color: #818180;
+      }
+      .vertical{
+        position: absolute;    
+      }
+      .horizontal{
+        position:absolute;
+        left: 30%;
       }
     </style>
   </head>
   <body>
+    <h1 class="vertical">vertical</h1>
+    <h1 class="horizontal">horizontal</h1>
     <div class="container">
       <div class="vertical-navbar">
         <ul>
@@ -88,7 +114,6 @@
           <li><a href="#">Java</a></li>
           <li><a href="#">HTML</a></li>
           <li><a href="#">CSS</a></li>
-         
         </ul>
       </div>
     </div>
